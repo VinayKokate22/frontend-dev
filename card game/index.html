@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>card game</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="info">
+        <h1>Blackjack</h1>
+        <p id="message-el">Click START GAME to play</p>
+        <p id="card-el">Cards:</p>
+        <p id="sum-el">Sum:</p>
+      </div>
+      <div class="buttons">
+        <button onclick="rendergame()">START GAME</button>
+        <button onclick="newcard()">NEW CARD</button>
+        <button onclick="newgame()">NEW GAME</button>
+      </div>
+      <p id="player-el"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
