@@ -1,8 +1,10 @@
-const inputBtn=document.getElementById("input-btn")
-
 let myLeads=[]
+const inputBtn=document.getElementById("input-btn")
+const deleteBtn=document.getElementById("delete-btn")
+
 const inputEl=document.getElementById("input-el")
 const ulEl=document.getElementById("ul-el")
+const leadsFromlocalstorage=JSON.parse(localStorage.getItem("myleads"))
 inputBtn.addEventListener("click", function(){
     
     console.log("helo")
@@ -10,6 +12,13 @@ inputBtn.addEventListener("click", function(){
     if (inputEl.value!="") {
         inputEl.value=""
     }
+
+    renderleads()
+})
+
+deleteBtn.addEventListener("click",function () {
+    localStorage.clear()
+    myLeads=[]
     renderleads()
 })
 

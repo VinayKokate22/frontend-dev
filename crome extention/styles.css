@@ -5,15 +5,17 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-     margin: 10px;
+     margin: 15px;
+     min-width:400px ;
 }
 input{
 width: 100%;
+display: block;
 margin-bottom:10px;
 height: 50px;
 border: solid 2px rgb(60, 144, 60) ;
 border-radius: 5px;
-font-size: 25px;
+font-size: 20px;
 padding-left: 10px;
 padding-right: 10px;
 }
@@ -30,12 +32,20 @@ button{
 
 }
 ul{
-    margin-left: 40px;
+    /* margin-left: 40px; */
     margin-top: 20px;
 }
 li{
     margin-top:4px;
+    list-style: none;
 }
 a{
+    padding-left: 1rem;
     color: rgb(76, 189, 76);
+    text-decoration: none;
+}
+#delete-btn{
+    background-color: white;
+    color: rgb(76, 189, 76);
+    border:solid 0.1rem rgb(76, 189, 76);;
 }
