@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.768);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arvo', serif;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    font-weight: bold;
+}
+button{
+    cursor: pointer;
+}
+.nav-list{
+    display: flex;
+    width: 50%;
+    /* background-color: black; */
+    justify-content: space-between;
+    list-style: none;
+    align-items: center;
+    padding: 10px 20px;
+   
+
+
+}
+.nav-list a{
+    text-decoration: none;
+    color: white;
+}
+.nav-list a:hover{
+    /* text-decoration: none; */
+    color: rgba(255, 255, 255, 0.688);
+}
+
+
+.nav-list .logo img{
+   width: 40px;
+}
+.rightnav{
+    width: 50%;
+    /* text-align: right; */
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    
+    /* background-color: black; */
+}
+.rightnav input,button{
+    height: 50%;
+    margin-right: 30px;
+    background-color: transparent;
+    border:solid 2px white;
+
+}
+.rightnav input{
+    width: 40%;
+    color: white;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-radius: 16px;
+
+}
+input:focus::placeholder {
+    color: transparent;
+  }
+.rightnav .btn{
+    width: 15%;
+    background-color:#73c8a9;
+    border:solid 2px #73c8a9;
+    font-size: large;
+    border-radius: 6px;
+
+/* font-weight: bold; */
+}
+.rightnav .btn:hover{
+    width: 15%;
+    background-color:#9ad5bf;
+    border:solid 2px #73c8a9;
+
+}
+
+.background{
+    background: #73c8a9; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #73c8a9, #373b44); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #73c8a9, #373b44); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.firsthalf{
+    width: 50%;
+    padding: 15rem 5rem;
+}
+.secondhalf{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+.firsthalf h2{
+    padding-bottom: 1rem;
+    font-size: 4rem;
+}
+.firsthalf .buttons{
+    padding-top: 1rem;
+}
+.buttons .btn{
+    /* padding: 1rem  ; */
+    width: 9em;
+    height: 3em;
+    margin-right: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    border-color: #73c8a9;
+   font-size: 1rem;
+   color: black;
+}
+.buttons .btn:hover{
+    background-color: rgba(255, 255, 255, 0.333);
+}
+.secondhalf img{
+    
+    width: 200px;
+}
