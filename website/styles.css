@@ -9,11 +9,18 @@
     box-sizing: border-box;
     font-family: 'Arvo', serif;
 }
+/* header{
+    height: 100px;
+} */
 .navbar{
     display: flex;
     justify-content: space-between;
     font-size: large;
     font-weight: bold;
+    position: sticky;
+   
+    top: 0;
+    cursor: pointer;
 }
 button{
     cursor: pointer;
@@ -21,11 +28,15 @@ button{
 .nav-list{
     display: flex;
     width: 50%;
-    /* background-color: black; */
+    
     justify-content: space-between;
     list-style: none;
     align-items: center;
     padding: 10px 20px;
+    align-self: center;
+    /* flex-wrap: wrap; */
+    /* align-content: center; */
+    
    
 
 
@@ -42,6 +53,7 @@ button{
 
 .nav-list .logo img{
    width: 40px;
+   margin-left: 2rem;
 }
 .rightnav{
     width: 50%;
@@ -52,7 +64,7 @@ button{
     
     /* background-color: black; */
 }
-.rightnav input,button{
+.rightnav input, .rightnav button{
     height: 50%;
     margin-right: 30px;
     background-color: transparent;
@@ -100,7 +112,7 @@ input:focus::placeholder {
 }
 .firsthalf{
     width: 50%;
-    padding: 15rem 5rem;
+    padding: 9rem 5rem ;
 }
 .secondhalf{
     display: flex;
@@ -131,4 +143,112 @@ input:focus::placeholder {
 .secondhalf img{
     
     width: 200px;
+}
+
+
+
+
+.infosection{
+    width: 80%;
+    /* display: flex; */
+    margin: 5rem auto;
+
+}
+.infosection h2{
+    /* margin-bottom: 2rem; */
+    font-size: 2.4rem;
+}
+.realinfo{
+    display: flex;
+    /* width: 80%; */
+    align-items: center;
+
+    justify-content: center;
+}
+.realinfo img{
+    width: 20%;
+}
+.realinfo p{
+    padding-right: 2rem;
+    /* padding-left: 2rem; */
+}
+.infotagtwo{
+    margin-left: 23%;
+}
+.infotwo{
+    padding-left: 2rem;
+
+}
+.footer{
+    margin: 3rem auto 5rem auto;
+    /* text-align: center; */
+    width: 35%;
+    background-color: #73c8a9;
+    padding: 2rem;
+    
+    border-radius: 20px;
+}
+footer h2 {
+     text-align: center;
+     font-size: 2.5rem;
+     margin-bottom: 1rem;
+     color: white;
+}
+.footer p{
+    text-align: center;
+    margin-bottom: 3rem;
+    color: white;
+
+
+}
+
+.contactform label{
+    display: block;
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    
+}
+.contactform label input,textarea{
+    display: block;
+    width: 100%;
+    margin-top: 1.5rem;
+    height: 3rem;
+    padding-left: 10px;
+    padding-right: 5px;
+    /* border-radius: 16px; */
+    font-size: 1.2rem;
+    background-color: #73c8a9;
+    border: solid 2px white;
+    border-radius: 10px;
+
+    
+}
+
+fieldset{
+    border: none;
+}
+.formbutton{
+   display: block;
+    margin: 3rem auto 2rem auto;
+    width: 7rem;
+    height: 3rem;
+    font-size: 1rem;
+    background-color: white;
+    border: 2px solid #73c8a9;
+    border-radius: 10px;
+   
+}
+.formbutton:hover{
+    background-color: rgba(255, 255, 255, 0.378);
+}
+.copyright{
+    background-color: #73c8a9;
+    color: white;
+    padding: 1.5rem 0;
+    text-align: center;
+    font-size: 1.2rem;
+}
+.copyright a{
+    margin-left: 1rem;
+    color: black;
 }
