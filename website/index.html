@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>eEducation</title>
+
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <nav class="navbar background">
-      <ul class="nav-list">
+  <body id="home">
+    <nav class="navbar background navbar-height">
+      <ul class="nav-list navbar-visibility">
         <div class="logo">
           <img src="pngfind.com-education-images-png-2219548.png" alt="logo" />
         </div>
@@ -18,7 +19,7 @@
         <li><a href="#Servies">Services</a></li>
         <li><a href="#contact">Contact Us</a></li>
       </ul>
-      <div class="rightnav">
+      <div class="rightnav navbar-visibility">
         <input
           type="text"
           name="search"
@@ -27,11 +28,16 @@
         />
         <button class="btn btn-sm">Search</button>
       </div>
+      <div class="burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
     </nav>
 
     <main>
       <section class="background firstsection">
-        <div class="box-main">
+        <div class="box-main" id="about">
           <div class="firsthalf">
             <h2>Future of Education is here</h2>
             <p>
@@ -119,7 +125,7 @@
       </section>
     </main>
     <footer>
-      <div class="footer">
+      <div class="footer" id="contact">
         <h2>Contact us</h2>
         <p>Please fill out this form with the required information</p>
         <form action="" class="contactform">
@@ -153,4 +159,5 @@
       </div>
     </footer>
   </body>
+  <script src="javascript/responsive.js"></script>
 </html>

@@ -8,10 +8,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arvo', serif;
+    scroll-behavior: smooth;
 }
-/* header{
-    height: 100px;
-} */
+
+
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -21,6 +22,8 @@
    
     top: 0;
     cursor: pointer;
+    height: 4rem;
+    
 }
 button{
     cursor: pointer;
@@ -34,8 +37,6 @@ button{
     align-items: center;
     padding: 10px 20px;
     align-self: center;
-    /* flex-wrap: wrap; */
-    /* align-content: center; */
     
    
 
@@ -57,12 +58,12 @@ button{
 }
 .rightnav{
     width: 50%;
-    /* text-align: right; */
+    
     display: flex;
     justify-content:flex-end;
     align-items: center;
     
-    /* background-color: black; */
+    
 }
 .rightnav input, .rightnav button{
     height: 50%;
@@ -83,16 +84,16 @@ input:focus::placeholder {
     color: transparent;
   }
 .rightnav .btn{
-    width: 15%;
+    width: 5rem;
     background-color:#73c8a9;
     border:solid 2px #73c8a9;
-    font-size: large;
+    font-size: 1rem;
     border-radius: 6px;
 
 /* font-weight: bold; */
 }
 .rightnav .btn:hover{
-    width: 15%;
+    
     background-color:#9ad5bf;
     border:solid 2px #73c8a9;
 
@@ -190,7 +191,7 @@ input:focus::placeholder {
 }
 footer h2 {
      text-align: center;
-     font-size: 2.5rem;
+     font-size: 2em;
      margin-bottom: 1rem;
      color: white;
 }
@@ -252,3 +253,99 @@ fieldset{
     margin-left: 1rem;
     color: black;
 }
+@media only screen and (max-width:1050px)
+{
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+       /* margin-top: 1.5rem; */
+       padding: 1rem 0;
+       height: 25rem;
+       transition: all 0.5s ease-out;
+
+
+
+    }
+    .nav-list{
+        flex-direction: column;
+        padding: 0;
+        /* align-items: left; */
+       /* margin-top: 1.5rem; */
+
+        
+
+    }
+    .nav-list li{
+       margin-top: 1.5rem;
+       /* text-align: left; */
+
+        
+
+    }
+    .nav-list .logo img {
+        width: 3rem;
+        margin-left:0;
+        
+    }
+    .rightnav{
+        flex-direction: column;
+        text-align: center;
+        /* margin: auto; */
+    }
+    .rightnav input {
+        width: 40%;
+        height: 3rem;
+        margin: auto;
+       margin-top: 1.5rem;
+
+
+    }
+    .rightnav .btn {
+        margin: 0.6rem auto;
+        /* font-weight: bold; */
+       margin-top: 1.5rem;
+
+    }
+    .burger{
+   
+        display: flex;
+        flex-direction: column;
+       position: absolute;
+        top: 1rem;
+        right: 1rem;
+        cursor: pointer;
+       
+        /* justify-content: space-around; */
+    }
+    .line{
+        width: 33px;
+        background-color: white;
+        height: 5px;
+        margin-top: 5px;
+    }
+    .navbar-height{
+        height: 4rem;
+       
+
+
+    }
+    .navbar-visibility{
+        
+        visibility: hidden;
+    }
+    .box-main{
+        flex-direction: column-reverse;
+    }
+    
+    .secondhalf {
+       padding-top: 2rem;
+    }
+    .firsthalf{
+        width: 80%;
+    }
+    .footer{
+        width: 60%;
+    }
+    
+}
+
