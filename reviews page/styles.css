@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+:root{
+    --themecolor:rgb(0, 217, 255);
+    color: white;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Arvo', serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    justify-content: center;
+    background-color: rgb(21, 21, 21);
+    padding: 2rem 0;
+    
+    
+}
+.tittle h1{
+    
+    letter-spacing: 0.2rem;
+    /* padding-top: 35rem; */
+   
+}
+.underline{
+    height: 0.3rem;
+    width: 50%;
+    margin: auto;
+    border: 0;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+
+    background-color: var(--themecolor);
+}
+img{
+    height: 12rem;
+    width: 12rem;
+    object-fit:cover;
+    
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    border-radius: 50%; 
+    box-shadow: 10px -10px 2px var(--themecolor);
+    transition: 0.3s;
+}
+img:hover{
+    height: 13rem;
+    width: 13rem;
+    
+}
+.imgcontainer{
+    padding-top: 3rem;
+}
+article{
+    margin-top: 2rem;
+   border: 0;
+   border-radius: 50px;
+    box-shadow: 0px 0px 30px  var(--themecolor) ;
+    text-align: center;
+    width: 30%;
+    min-width: 25rem;
+    background-color: rgb(45, 45, 45);
+}
+.info{
+    width: 90%;
+   
+    margin: 2rem auto;
+}
+.name{
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    
+}
+.job{
+    color: var(--themecolor);
+    /* font-weight: 700; */
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.personinfo{
+    margin-bottom: 1rem;
+    overflow: hidden; /* hides text that goes beyond the set number of lines */
+    display: -webkit-box; /* for webkit-based browsers */
+    -webkit-line-clamp: 5; /* sets the number of lines */
+    -webkit-box-orient: vertical; /* makes sure the text is displayed vertically */
+ 
+}
+.buttoncontainer{
+    margin-bottom: 1rem;
+    
+}
+.btn{
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.prev , .next{
+    background-color: transparent;
+    color: white;
+    padding: 0.4rem;
+    border: 2px solid gray;
+    border-radius: 5px;
+    /* cursor: pointer; */
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    
+}
+.prev:hover , .next:hover{
+    background-color: var(--themecolor);
+    color: black;
+    border-color: transparent;
+    
+}
+.randombutton{
+    margin-bottom: 1rem;
+
+}
+.random{
+    background-color: transparent;
+    color: white;
+    border: 2px solid var(--themecolor);
+    padding: 0.4rem;
+    border-radius: 10px;
+    text-transform: capitalize;
+    
+}
+.random:hover{
+    background-color: black;
+    color: var(--themecolor);
+    border-color: transparent;
+}
