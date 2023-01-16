@@ -40,23 +40,42 @@ const reviews = [
         name: "Sara Jones",
         job: "UI/UX Desingner",
         img:
-          "D:\Coding\git git hub complete course\projects\reviews page\photo-1544005313-94ddf0286df2.avif",
+          "photo-1544005313-94ddf0286df2.avif",
         text:
           "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odioaccusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit.Quis earum, ut nesciunt dolorum corrupti sunt enim numquam distinctioeveniet. Aliquid officia repellendus nisi ullam .",
       },
   ];
   let count=0
   const nextBtn=document.querySelector(".next")
+  const prevBtn=document.querySelector(".prev")
   const namePerson=document.querySelector(".name")
   const personJob=document.querySelector(".job")
   const personInfo=document.querySelector(".personinfo")
   const personImage=document.querySelector(".personimage")
 
-  nextBtn.addEventListener("click",function () {
-    console.log("hello")
+
+  function displayreviews(count) {
     namePerson.textContent=reviews[count].name
     personInfo.textContent=reviews[count].text
     personJob.textContent=reviews[count].job 
-    // personImage.getAttribute("src")=reviews[count].img
-    count=(count+1)%5
+    personImage.src=reviews[count].img
+    
+  }
+  nextBtn.addEventListener("click",function () {
+    // console.log("hello")
+    count=(count+1)%reviews.length
+    displayreviews(count)
+
+    // console.log(count)
+  })
+
+
+  prevBtn.addEventListener("click",function () {
+    if (count==0) {
+      count=reviews.length-1
+    }
+    else{
+      count--
+    }
+    displayreviews(count)
   })

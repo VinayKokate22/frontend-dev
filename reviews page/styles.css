@@ -2,7 +2,7 @@
 
 :root{
     --themecolor:rgb(0, 217, 255);
-    color: white;
+    /* color: white; */
 }
 *{
     margin: 0;
@@ -18,12 +18,13 @@ body{
     justify-content: center;
     background-color: rgb(21, 21, 21);
     padding: 2rem 0;
+    color: white;
     
     
 }
 .tittle h1{
     
-    letter-spacing: 0.2rem;
+    letter-spacing: 0.1rem;
     /* padding-top: 35rem; */
    
 }
@@ -88,7 +89,7 @@ article{
     margin-bottom: 1rem;
     overflow: hidden; /* hides text that goes beyond the set number of lines */
     display: -webkit-box; /* for webkit-based browsers */
-    -webkit-line-clamp: 5; /* sets the number of lines */
+    -webkit-line-clamp: 4; /* sets the number of lines */
     -webkit-box-orient: vertical; /* makes sure the text is displayed vertically */
  
 }
@@ -106,8 +107,8 @@ article{
     color: white;
     padding: 0.4rem;
     border: 2px solid gray;
-    border-radius: 5px;
-    /* cursor: pointer; */
+    border-radius: 15px;
+    
     font-size: 0.7rem;
     text-transform: uppercase;
     
@@ -127,7 +128,7 @@ article{
     color: white;
     border: 2px solid var(--themecolor);
     padding: 0.4rem;
-    border-radius: 10px;
+    border-radius: 15px;
     text-transform: capitalize;
     
 }
