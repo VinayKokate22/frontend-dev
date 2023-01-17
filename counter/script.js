@@ -8,17 +8,14 @@ let temp=JSON.parse( countEl.textContent)
 
 btndecrease.addEventListener("click",function () {
 
-    temp=temp-1;
-    // console.log(temp)
+    temp=temp-1
     renderthecounter(temp)
 
 
 })
 btnincrease.addEventListener("click",function () {
 
-    temp=temp+1;
-    
-    // console.log(temp)
+    temp=temp+1
     renderthecounter(temp)
 
 
