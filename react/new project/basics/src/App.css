@@ -1,10 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 2rem 3rem;
+  background-color: #21222A;
+ 
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
 }
 .navbar-list{
+  
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  gap: 8rem;
+  
+}
+.navbar-list a{
+  color: #DEEBF8;
+  text-decoration: none;
+
+}
+.navbar-list li{
+  list-style: none;
+}
+img{
+  width: 3rem;
+}
+.content h1{
+  font-size: 4rem;
+  
+}
+.content{
+  padding: 4rem 2rem;
+  background-color:#282D35;
+  background-image: url(./img/vinay.png);
+  background-repeat: no-repeat;
+  background-position-x:right ;
+  background-position-y: center;
+
+
+  color: white;
+}
+.reason-list{
+  margin: 2rem 4rem;
+  font-size: 1.5rem;
+}
+.reason-list li{
+  margin-top: 1rem;
+
+  
+}
+.reason-list li::marker{
+  color: #61DAFB;
+  font-size: 2rem;
+  
+}
+footer{
+  background-color:  #282D35;
+  color: white;
+  padding: 0.5rem 0;
+  text-align: center;
+}
+.navbar-logotext {
+  display: flex;
+  align-items: center;
+  
+
+}
+.navbar-logotext a{
+  text-decoration: none;
+  color: #61DAFB;
+  padding: 0 1rem;
 }
