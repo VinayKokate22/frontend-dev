@@ -1,6 +1,6 @@
 import React from 'react'
 const firstname="Vinay"
-const lastname="Kokate"
+const lastname="K okate"
 const Main = () => {
   return (
     <main className='content'>
