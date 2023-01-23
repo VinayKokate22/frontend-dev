@@ -1,0 +1,148 @@
+:root{
+    --colortheme:rgb(255, 3, 58);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+
+}
+body{
+    background-color: #080808;
+    color: white;
+}
+.landing-page{
+    height: 100vh;
+    background-image: url(3d-business-man-playing-dress-up-with-pet-dog.png);
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    background-size: 35rem;
+}
+
+.navbar{
+    padding: 1rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h1{
+    font-size: 3.5rem;
+}
+.colorword{
+    color: var(--colortheme);
+}
+.nav-list{
+    display: flex;
+    list-style: none;
+}
+.nav-list a{
+    color:white;
+    margin: 0 1.5rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    position: relative;
+    
+
+}
+.nav-list a::after{
+    content: '';
+    width: 0;
+    background: var(--colortheme);
+    height: 0.2rem;
+    position: absolute;
+    left: 0;
+    bottom: -0.4rem;
+    transition: 0.5s;
+    
+}
+.nav-list a:hover::after{
+    width: 100%;
+}
+
+.hero{
+    margin-top:10rem ;
+    margin-left: 10rem;
+    width: 50%;
+    
+}
+.hero p{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.hero h2{
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+
+/* about section */
+
+.aboutflex{
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.about-image{
+    background-color: rgb(33, 33, 33);
+    padding: 1rem;
+    border: none;
+    border-radius: 10px;
+    margin-right: 5rem;
+
+}
+.about-image img{
+    width: 30rem;
+}
+.about-info h2{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.about-info p{
+    color: gray;
+}
+.about-skills{
+    display: flex;
+    margin-top: 2rem;
+    
+}
+.about-skills li{
+    list-style: none;
+    margin-right: 3rem;
+    color: gray;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+.about-skills li::after{
+    content: '';
+    width: 0;
+    background: var(--colortheme);
+    height: 0.2rem;
+    position: absolute;
+    left: 0;
+    bottom: -0.4rem;
+    transition: 0.5s;
+}
+.about-skills li:hover::after{
+    width: 100%;
+}
+.tab-content li{
+    list-style: none;
+
+    
+}
+.tab-content{
+    display: none;
+}
+.active-tab{
+   display: block;
+   margin: 2rem 0;
+}
+.marginsmall{
+   margin: 0.5rem 0;
+}
+.marginmedium{
+    margin: 1rem 0;
+}
