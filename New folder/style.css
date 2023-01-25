@@ -1,5 +1,6 @@
 :root{
     --colortheme:rgb(255, 3, 58);
+    /* --colortheme:rgb(3, 142, 95); */
 }
 *{
     margin: 0;
@@ -87,6 +88,7 @@ body{
 .about-image{
     background-color: rgb(33, 33, 33);
     padding: 1rem;
+    /* width: 40%; */
     border: none;
     border-radius: 10px;
     margin-right: 5rem;
@@ -95,6 +97,9 @@ body{
 .about-image img{
     width: 30rem;
 }
+/* .about-info{
+    width: 60%;
+} */
 .about-info h2{
     font-size: 3rem;
     margin-bottom: 1rem;
@@ -145,4 +150,133 @@ body{
 }
 .marginmedium{
     margin: 1rem 0;
+}
+
+
+
+
+/* services */
+
+.services-flex{
+    display: flex;
+    
+    gap: 4rem;
+}
+.servicesection{
+    width: 80%;
+    margin: 8rem auto;
+}
+.servicesection h2{
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+.serviceicon{
+    transition: 0.3s;
+    padding: 2rem;
+    background-color: rgb(33, 33, 33);
+
+}
+.serviceicon i{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+
+}
+.serviceicon:hover{
+    background-color: var(--colortheme);
+    transform: translateY(-1rem);
+    border-radius:10px ;
+
+}
+.serviceicon h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 1.5rem;
+    
+}
+.serviceicon a{
+    text-decoration: none;
+    color: white;
+}
+.serviceicon p{
+    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  margin-bottom: 1.5rem;
+
+}
+
+
+/* work section */
+
+.worksection{
+    width: 80%;
+    margin: 8rem auto;
+}
+
+.work-flex{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(259px,1fr));
+    grid-gap: 40px;
+    /* margin-top: 50px; */
+    
+}
+.work-list{
+    background-color: rgb(33, 33, 33);
+    position: relative;
+    height: 25rem;
+    border: none;
+    border-radius: 10px;
+    
+}
+
+.layer{
+    position: absolute;
+    bottom: 0;
+    
+    background: linear-gradient(rgba(0,0,0,0.6),var(--colortheme));
+    height: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5rem;
+    overflow: hidden;
+    justify-content: center;
+    border: none;
+    border-radius: 10px;
+    transition: height 0.5s;
+
+
+ 
+
+}
+.work-list:hover .layer{
+    height: 100%;
+}
+.layer h3{
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+}
+.layer p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    margin-bottom: 1.5rem;
+}
+.layer a{
+    background-color: white;
+    padding: 0.5rem;
+    border:none ;
+    border-radius: 50%;
+    color: black;
+    transition: 0.3s;
+}
+.layer a:hover{
+    box-shadow: 0px 0px 10px white;
+}
+.worksection h2{
+    font-size: 3rem;
+    margin-bottom: 3rem;
 }
