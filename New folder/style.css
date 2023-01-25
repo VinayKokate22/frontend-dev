@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family:'Poppins',sans-serif;
+    
 
 }
 ::-webkit-scrollbar-thumb {
@@ -95,13 +96,24 @@ display: none;
     margin-bottom: 0.5rem;
 
 }
+@keyframes animatedBackground {
+    from {
+      background-position: 100% 50%;
+    }
+    to {
+      background-position: 90% 50%;
+    }
+  }
 .landing-page{
     height: 100vh;
     background-image: url(3d-business-man-playing-dress-up-with-pet-dog.png);
-    /* animation: animatedBackground 10s linear infinite alternate; */
     background-repeat: no-repeat;
     background-position: 90% 50%;
     background-size: 35rem;
+}
+.landing-page.landing-page:hover{
+    animation: animatedBackground 1s ease-in-out alternate;
+
 }
 
 .navbar{
@@ -149,6 +161,7 @@ display: none;
     margin-left: 10rem;
     width: 50%;
     
+    
 }
 .hero p{
     font-size: 2rem;
@@ -171,18 +184,22 @@ display: none;
 .about-image{
     background-color: rgb(33, 33, 33);
     padding: 1rem;
-    /* width: 40%; */
+    width: 40%;
     border: none;
+    height:fit-content;
     border-radius: 10px;
     margin-right: 5rem;
 
 }
+
 .about-image img{
-    width: 30rem;
+    width:100%;
 }
-/* .about-info{
+.about-info{
     width: 60%;
-} */
+    
+
+}
 .about-info h2{
     font-size: 4rem;
     margin-bottom: 1rem;
