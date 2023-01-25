@@ -1,5 +1,5 @@
 :root{
-    --colortheme:rgb(255, 3, 58);
+    --colortheme:rgb(255, 34, 97);
     /* --colortheme:rgb(3, 142, 95); */
 }
 *{
@@ -9,8 +9,45 @@
     font-family:'Poppins',sans-serif;
 
 }
+::-webkit-scrollbar-thumb {
+    background-color: var(--colortheme);
+    border-radius: 3px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(57, 57, 57);
+}
+::-webkit-scrollbar {
+    width: 12px;
+}
+body,html{
+    /* overflow-x: hidden; */
+    scroll-behavior: smooth;
+
+}
 body{
-    background-color: #080808;
+    background-color: #0d0d0d;
+    color: white;
+}
+.scroll-to-top{
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    padding: 0.5rem;
+    margin: 0 2rem 2rem 0;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    border-radius: 35%;
+    font-size: 2rem;
+}
+.scroll-to-top:hover{
+    background-color: var(--colortheme);
+    
+}
+.scroll-to-top i{
+    color: black;
+}
+.scroll-to-top:hover i{
     color: white;
 }
 .landing-page{
@@ -101,7 +138,7 @@ body{
     width: 60%;
 } */
 .about-info h2{
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 1rem;
 }
 .about-info p{
@@ -167,7 +204,7 @@ body{
     margin: 8rem auto;
 }
 .servicesection h2{
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 3rem;
 }
 .serviceicon{
@@ -234,12 +271,13 @@ body{
     position: absolute;
     bottom: 0;
     
-    background: linear-gradient(rgba(0,0,0,0.6),var(--colortheme));
+    background-color: var(--colortheme);
+    
     height: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 5rem;
+    padding: 0 4rem;
     overflow: hidden;
     justify-content: center;
     border: none;
@@ -261,7 +299,7 @@ body{
 .layer p{
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     margin-bottom: 1.5rem;
 }
@@ -277,6 +315,111 @@ body{
     box-shadow: 0px 0px 10px white;
 }
 .worksection h2{
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 3rem;
+}
+.seemorelink{
+    display: block;
+    margin: 3rem auto;
+    width: fit-content;
+    
+    text-decoration: none;
+    color: white;
+    border: 2px solid var(--colortheme);
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    /* font-weight: bold; */
+    transition: 0.3s;
+    
+}
+.seemorelink:hover{
+    background-color: var(--colortheme);
+   
+    box-shadow: 0 0 18px var(--colortheme);
+    
+}
+
+/* contact */
+.contactmesection{
+    display: flex;
+    width: 80%;
+    margin: 8rem auto;
+    justify-content: space-between;
+    
+    
+}
+.contact-links{
+    display: flex;
+    flex-direction: column;
+}
+.contact-links button{
+    width: 10rem;
+    background-color: var(--colortheme);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 1rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+.contact-form{
+    width: 60%;
+}
+.contact-form input, .contact-form button ,.contact-form textarea{
+         display: block;
+         width: 100%;
+         background-color: rgb(33, 33, 33);
+         border: none;
+         margin-bottom: 1rem;
+         /* height: 2rem; */
+         padding: 1rem;
+         color: white;
+   border: 2px solid transparent;
+
+}
+.contact-form button{
+    cursor: pointer;
+    background-color: var(--colortheme);
+    border-radius: 10px;
+
+}
+.contact-form input:hover,.contact-form textarea:hover{
+    outline: none;
+    border-radius: 10px;
+   border: 2px solid var(--colortheme);
+}
+.fa-envelope ,.fa-phone{
+    color: var(--colortheme);
+}
+.contactmesection h2{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+.direct-links{
+    margin-bottom: 1.5rem;
+    
+}
+.direct-links a{
+   color: white;
+   text-decoration: none;
+   margin-left: 1rem;
+   font-size: 1.3rem;
+}
+.direct-links i{
+    font-size: 1.5rem;
+}
+.sociallinks-flex i{
+    color: gray;
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 1.5rem;
+
+}
+
+/* footer */
+
+.footer{
+    background-color:rgb(33, 33, 33);
+    padding: 2rem;
+    text-align: center;
 }
