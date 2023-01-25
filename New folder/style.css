@@ -1,6 +1,7 @@
 :root{
     --colortheme:rgb(255, 34, 97);
-    /* --colortheme:rgb(3, 142, 95); */
+    --colortheme2:rgb(0, 171, 187);
+    --colortheme3:rgb(0, 165, 110);
 }
 *{
     margin: 0;
@@ -50,9 +51,54 @@ body{
 .scroll-to-top:hover i{
     color: white;
 }
+.color-option{
+    
+    position: fixed;
+    right: 3rem;
+    top: 5rem;
+}
+.color-option li{
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+}
+.hidden{
+display: none;
+}
+.colorpalet{
+    position: fixed;
+    right: 3rem;
+    top: 2rem;
+    font-size: 2rem;
+    
+}
+.red{
+    list-style: none;
+    background-color:rgb(255, 34, 97) ;
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+}
+.blue{
+    list-style: none;
+    background-color: rgb(0, 171, 187);
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+
+}
+.green{
+    list-style: none;
+    background-color:rgb(0, 165, 110);
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 0.5rem;
+
+}
 .landing-page{
     height: 100vh;
     background-image: url(3d-business-man-playing-dress-up-with-pet-dog.png);
+    /* animation: animatedBackground 10s linear infinite alternate; */
     background-repeat: no-repeat;
     background-position: 90% 50%;
     background-size: 35rem;
