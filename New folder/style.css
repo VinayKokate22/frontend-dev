@@ -1,7 +1,14 @@
 :root{
-    --colortheme:rgb(255, 34, 97);
-    --colortheme2:rgb(0, 171, 187);
-    --colortheme3:rgb(0, 165, 110);
+    --colortheme:#5067cd;
+    /* --colortheme:#5793fb; */
+    /* --colortheme:#6e57e0; */
+    /* --colortheme:rgb(255, 34, 97); */
+    /* --colortheme:#e8ecff; */
+    --divbackground:#212121;
+    /* --divbackground:#afdaff; */
+
+
+
 }
 *{
     margin: 0;
@@ -10,6 +17,16 @@
     font-family:'Poppins',sans-serif;
     
 
+}
+video{
+   width: 50%;
+   height: 75%;
+   object-fit: cover;
+   border-radius: 10%;
+   position: absolute;
+   top: 7rem;
+   right: 5rem;
+   z-index: -12;
 }
 ::-webkit-scrollbar-thumb {
     background-color: var(--colortheme);
@@ -22,14 +39,46 @@
     width: 12px;
 }
 body,html{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     scroll-behavior: smooth;
+    scroll-padding: 8rem;
 
 }
-body{
+.dark{
     background-color: #0d0d0d;
     color: white;
+    
 }
+.fa-computer-mouse-scrollwheel{
+    color: var(--colortheme);
+}
+.light{
+    /* background-color: rgb(199, 227, 255); */
+    background:linear-gradient( rgb(199, 227, 255),rgb(233, 240, 255),rgb(199, 227, 255));
+    color: black;
+    
+}
+.light a{
+    color: black !important;
+}
+.light .about-info p{
+    color: black;
+}
+.light .contact-form input,.light .contact-form textarea{
+    color: black;
+}
+.navigationtheme-menu{
+    
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+}
+.fa-moon{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 .scroll-to-top{
     position:fixed;
     bottom: 0;
@@ -76,45 +125,35 @@ display: none;
 .red{
     list-style: none;
     background-color:rgb(255, 34, 97) ;
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     margin-bottom: 0.5rem;
 }
 .blue{
     list-style: none;
-    background-color: rgb(0, 171, 187);
-    width: 2rem;
-    height: 2rem;
+    background-color: #6e57e0;
+    width: 1.5rem;
+    height: 1.5rem;
     margin-bottom: 0.5rem;
 
 }
 .green{
     list-style: none;
     background-color:rgb(0, 165, 110);
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
     margin-bottom: 0.5rem;
 
 }
-@keyframes animatedBackground {
-    from {
-      background-position: 100% 50%;
-    }
-    to {
-      background-position: 90% 50%;
-    }
-  }
+
 .landing-page{
     height: 100vh;
-    background-image: url(3d-business-man-playing-dress-up-with-pet-dog.png);
+    /* background-image: url(3d-business-man-playing-dress-up-with-pet-dog.png);
     background-repeat: no-repeat;
     background-position: 90% 50%;
-    background-size: 35rem;
+    background-size: 35rem; */
 }
-.landing-page.landing-page:hover{
-    animation: animatedBackground 1s ease-in-out alternate;
 
-}
 
 .navbar{
     padding: 1rem 8rem;
@@ -157,19 +196,66 @@ display: none;
 }
 
 .hero{
-    margin-top:10rem ;
-    margin-left: 10rem;
-    width: 50%;
     
+    
+    width: 80%;
+    margin: 8rem auto ;
     
 }
 .hero p{
     font-size: 2rem;
     margin-bottom: 2rem;
+    text-transform: capitalize;
 }
 .hero h2{
+    font-size: 5rem;
+    width: 65%;
+    text-transform: capitalize;
+}
+.hero h3{
     font-size: 4rem;
     text-transform: capitalize;
+    margin-bottom: 2rem;
+
+
+}
+.scrolldown{
+    display: flex;
+    gap: 1rem;
+    transition: 0.6s;
+    width: fit-content;
+    color: white;
+    text-decoration: none;
+}
+.scrolldown:hover{
+    transform: translateY(0.5rem);
+}
+
+.rubberband:hover{
+    color: white;
+    display: inline-block;
+    text-transform: lowercase;
+    animation: animate 0.4s;
+}
+.capital:hover{
+    color: white;
+
+
+    text-transform: capitalize;
+    display: inline-block;
+    
+    animation: animate 0.4s;
+}
+@keyframes animate {
+    25%{
+        transform: scale(0.8,1.3);
+    }
+    50%{
+        transform: scale(1.1,0.8);
+    }
+    75%{
+        transform: scale(0.7,1.2);
+    }
 }
 
 
@@ -182,7 +268,7 @@ display: none;
     
 }
 .about-image{
-    background-color: rgb(33, 33, 33);
+    background-color: var(--divbackground);
     padding: 1rem;
     width: 40%;
     border: none;
@@ -273,7 +359,8 @@ display: none;
 .serviceicon{
     transition: 0.3s;
     padding: 2rem;
-    background-color: rgb(33, 33, 33);
+    background-color: var(--divbackground);
+
 
 }
 .serviceicon i{
@@ -322,7 +409,7 @@ display: none;
     
 }
 .work-list{
-    background-color: rgb(33, 33, 33);
+    background-color: var(--divbackground);
     position: relative;
     height: 25rem;
     border: none;
@@ -431,25 +518,28 @@ display: none;
 .contact-form input, .contact-form button ,.contact-form textarea{
          display: block;
          width: 100%;
-         background-color: rgb(33, 33, 33);
+         background-color: var(--divbackground);
          border: none;
          margin-bottom: 1rem;
          /* height: 2rem; */
          padding: 1rem;
          color: white;
-   border: 2px solid transparent;
+   border-bottom: 2px solid transparent;
+   outline: none;
+   font-size: 1.2rem;
+   
+   
 
+}
+
+.contact-form input:hover,.contact-form textarea:hover{
+    border-bottom: 2px solid var(--colortheme);   
 }
 .contact-form button{
     cursor: pointer;
     background-color: var(--colortheme);
-    border-radius: 10px;
+    border-radius: 10px; 
 
-}
-.contact-form input:hover,.contact-form textarea:hover{
-    outline: none;
-    border-radius: 10px;
-   border: 2px solid var(--colortheme);
 }
 .fa-envelope ,.fa-phone{
     color: var(--colortheme);
@@ -482,7 +572,7 @@ display: none;
 /* footer */
 
 .footer{
-    background-color:rgb(33, 33, 33);
+    background-color:var(--divbackground);
     padding: 2rem;
     text-align: center;
 }
