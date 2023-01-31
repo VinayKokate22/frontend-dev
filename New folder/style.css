@@ -44,6 +44,10 @@ body,html{
     scroll-padding: 8rem;
 
 }
+body{
+    width: 100%;
+    height: 100%;
+}
 .dark{
     background-color: #0d0d0d;
     color: white;

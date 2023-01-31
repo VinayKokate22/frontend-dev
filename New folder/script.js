@@ -1,4 +1,6 @@
 
+
+
 const aboutSkills= document.querySelector(".aboutskills")
 const aboutExp= document.querySelector(".aboutexp")
 const aboutEdu= document.querySelector(".aboutedu")
@@ -150,3 +152,8 @@ function sendemail() {
       message => alert(message)
     );
 }
+
+
+const Scrollbar = window.scrollbars;
+
+Scrollbar.init(document.querySelector("#smoothscroll"))

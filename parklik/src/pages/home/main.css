@@ -1,0 +1,42 @@
+.mainsection {
+  background-color: black;
+  color: white;
+}
+/* testimonial page  starts*/
+
+.testimonials {
+  padding: 10rem 0;
+}
+.review {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  padding: 2rem 4rem;
+  position: relative;
+}
+
+.review-title {
+  text-align: center;
+  font-size: 8rem;
+  margin-bottom: 4rem;
+}
+.review .btn {
+  background-color: transparent;
+  color: white;
+  font-size: 2rem;
+  height: fit-content;
+}
+.review .name {
+  margin: 1rem 0;
+}
+.imgcontainer img {
+  width: 10rem;
+  height: 10rem;
+  border: none;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* testimonial page ends */

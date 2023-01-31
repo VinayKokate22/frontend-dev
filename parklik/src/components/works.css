@@ -1,0 +1,31 @@
+.worksinfo {
+  width: 95%;
+  margin: 0 auto;
+  padding: 10rem 0 0 0;
+}
+.workstitle h2 {
+  font-size: 8rem;
+  text-transform: capitalize;
+  text-align: center;
+
+  font-weight: 600;
+}
+.step_three,
+.step_one,
+.step_two {
+  display: flex;
+  margin: 5rem 5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: -rem;
+}
+.worksinfo h3 {
+  font-size: 2rem;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+.worksinfo img {
+  width: 10rem;
+  border: none;
+  border-radius: 20px;
+}

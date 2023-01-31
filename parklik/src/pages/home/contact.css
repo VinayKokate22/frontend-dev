@@ -1,0 +1,73 @@
+.contactmesection {
+  display: flex;
+  width: 80%;
+  margin: 8rem auto;
+  justify-content: space-between;
+  color: white;
+}
+.contact-links {
+  display: flex;
+  flex-direction: column;
+}
+/* .contact-links button {
+  width: 10rem;
+  background-color: var(--colortheme);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+} */
+.contact-form {
+  width: 60%;
+}
+.contact-form input,
+.contact-form button,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  margin-bottom: 1rem;
+  background-color: rgba(255, 255, 255, 0.765);
+  padding: 1rem;
+  color: black;
+  border-bottom: 2px solid transparent;
+  outline: none;
+  font-size: 1.2rem;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-bottom: 2px solid var(--colortheme);
+}
+.contact-form button {
+  cursor: pointer;
+  background-color: var(--colortheme);
+}
+.fa-envelope,
+.fa-phone {
+  color: var(--colortheme);
+}
+.contactmesection h2 {
+  font-size: 4rem;
+  margin-bottom: 3rem;
+}
+.direct-links {
+  margin-bottom: 1.5rem;
+}
+.direct-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}
+.direct-links i {
+  font-size: 1.5rem;
+}
+.sociallinks-flex i {
+  color: white;
+  font-size: 2rem;
+  margin-right: 1rem;
+  margin-bottom: 1.5rem;
+}
