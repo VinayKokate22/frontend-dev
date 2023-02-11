@@ -1,0 +1,26 @@
+.locationcard {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  color: white;
+  background-color: rgb(49, 49, 49);
+  margin: 1rem 1rem 1rem 1rem;
+
+  transition: 0.3s;
+  position: relative;
+}
+
+.locationcard:hover {
+  background-color: var(--colortheme);
+  color: white;
+  border-radius: 10px;
+
+  /* border: 2px solid rgb(0, 0, 0); */
+}
+.locationcard img {
+  border-radius: 10px;
+}
+.location_card_info {
+  display: flex;
+  flex-direction: column;
+}

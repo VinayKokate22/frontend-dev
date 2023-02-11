@@ -1,0 +1,82 @@
+.bookinglocationdetails_flex {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.079);
+  gap: 2rem;
+}
+.slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.643), rgba(0, 0, 0, 0.647));
+  padding: 0 2rem;
+}
+.slider i {
+  color: rgb(255, 255, 255);
+
+  font-size: 5rem;
+}
+.slider img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+}
+.bookinglocationdetails {
+  flex: 4;
+  padding: 2rem;
+  max-height: 38rem;
+  overflow-y: scroll;
+
+  border-radius: 10px 10px 0 0;
+  /* border: 2px solid white; */
+}
+.bookinglocationdetails::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.bookinglocationdetails {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.bookinglocationfinalbook {
+  flex: 2;
+}
+.bookinglocationfinalbook_tab {
+  background: rgb(255, 255, 255);
+  /* background-color: var(--colortheme); */
+  height: fit-content;
+  width: fit-content;
+  padding: 2rem;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  /* box-shadow: 0 0 10px black; */
+}
+.bookinglocationfinalbook_tab button {
+  width: 100%;
+  background-color: var(--colortheme);
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin-top: 1rem;
+  color: white;
+  font-weight: 600;
+}
+
+.locationimage_container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  gap: 0.4rem;
+}
+
+.bookinglocationdetails_details h3 {
+  margin: 1rem 0;
+  text-transform: capitalize;
+}

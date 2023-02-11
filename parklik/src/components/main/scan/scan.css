@@ -1,0 +1,41 @@
+.scan {
+  margin: 10rem auto;
+}
+
+.scantitle {
+  text-align: center;
+  font-size: 5rem;
+  text-transform: capitalize;
+  margin: 5rem;
+}
+.discount_code {
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  padding: 5rem 2rem;
+  text-align: center;
+  position: relative;
+  cursor: none;
+}
+.discount_code h3 {
+  margin: auto;
+  width: fit-content;
+  color: black;
+}
+
+.triggerbubble:hover + .discount_code h3 {
+  color: white;
+}
+.discount_code:hover ~ .cursor {
+  width: 300px;
+  height: 300px;
+}
+.cursor {
+  position: absolute;
+
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  mix-blend-mode: difference;
+
+  background-color: #ffffff;
+}

@@ -1,0 +1,26 @@
+.location_flex {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  margin-top: 1rem;
+}
+
+.location_option {
+  flex: 2;
+  background-color: black;
+  overflow-y: scroll;
+  max-height: 38rem;
+}
+.location_option::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.location_option {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.location_map {
+  flex: 3;
+  /* background-image: url(https://c8.alamy.com/comp/R07NG5/urban-vector-city-map-of-paris-france-R07NG5.jpg);
+  background-size: cover; */
+}

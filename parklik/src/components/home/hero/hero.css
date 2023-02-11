@@ -1,0 +1,62 @@
+.herocontainer {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  margin: 4rem 0 0 0rem;
+  color: white;
+}
+.title h2 {
+  font-size: 6rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.title h3 {
+  font-size: 3rem;
+}
+
+.titleimage img {
+  width: 20rem;
+}
+.searchbar {
+  margin: 5rem 0 0 8rem;
+
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  background-color: rgb(255, 255, 255);
+  gap: 1rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+.searchbar i {
+  background-color: var(--colortheme);
+  color: white;
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 1rem;
+  cursor: pointer;
+
+  text-align: center;
+}
+.searchbar input {
+  width: 100%;
+  height: 2rem;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-size: 1.5rem;
+}
+.book_button button {
+  margin-top: 5rem;
+  font-size: 2rem;
+  padding: 1rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  cursor: pointer;
+}

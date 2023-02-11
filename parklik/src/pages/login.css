@@ -1,0 +1,81 @@
+.login_page {
+  height: fit-content;
+  min-height: 100vh;
+  display: flex;
+}
+.createaccount {
+  color: var(--colortheme);
+  cursor: pointer;
+  position: relative;
+}
+.createaccount::after {
+  content: "";
+  width: 0;
+  background: var(--colortheme);
+  height: 0.2rem;
+  position: absolute;
+  left: 0;
+  bottom: -0.4rem;
+  transition: 0.3s;
+}
+.createaccount:hover::after {
+  width: 100%;
+}
+
+.login_page_background_img {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?w=740&t=st=1675960514~exp=1675961114~hmac=0c025296024b7ad9b86a1e87bed9c244d656afe1ffb6d3b5a18a2f679ec33871);
+  flex: 1.5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.signup_page_background_img {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    url(https://img.freepik.com/free-vector/login-concept-illustration_114360-757.jpg?w=740&t=st=1676050812~exp=1676051412~hmac=dff4540b159fe8792bcc1cd69ba760d86af125a49ff4a790981e05123d85a76e);
+  flex: 1.5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.login_credentials {
+  background-color: rgb(0, 0, 0);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding: 1rem 2rem;
+}
+.login_credentials_card {
+  display: flex;
+  flex-direction: column;
+}
+.login_title h2 {
+  font-size: 6rem;
+  margin: 4rem 0;
+}
+.login_title p {
+  margin: 4rem 0;
+  color: rgba(255, 255, 255, 0.7);
+}
+.login_credentials_card input {
+  background-color: transparent;
+  border: none;
+  margin: 1rem 0;
+  padding: 0.5rem;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.37);
+  color: white;
+  font-size: 1.1rem;
+}
+.login_credentials_card button {
+  width: fit-content;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+fieldset {
+  border: none;
+}

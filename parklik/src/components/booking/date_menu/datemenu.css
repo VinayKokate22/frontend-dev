@@ -1,0 +1,99 @@
+.datemenu_flex {
+  display: flex;
+  /* justify-content: space-between; */
+  background-color: rgb(255, 255, 255);
+  padding: 0.6rem 2rem;
+  /* margin-bottom: 1rem; */
+  gap: 2rem;
+  align-items: center;
+}
+.datemenu_flex .headersearchinput {
+  padding: 0.5rem;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  height: 3rem;
+  text-transform: capitalize;
+  background-color: rgba(0, 0, 0, 0.119);
+}
+.datemenu_place {
+  flex: 1;
+}
+.datemenu_searchButton button {
+  width: 6rem;
+  background-color: var(--colortheme);
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  height: 3rem;
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+}
+.datemenu_date_container {
+  display: flex;
+  gap: 1rem;
+  height: 100%;
+  align-items: center;
+}
+.datemenu_date {
+  flex: 1;
+  background-color: rgba(0, 0, 0, 0.119);
+  padding: 0.5rem;
+  border-radius: 10px;
+  /* text-transform: capitalize; */
+  height: 3rem;
+  position: relative;
+  cursor: pointer;
+}
+.calender {
+  position: absolute;
+  top: 55px;
+  left: 0;
+  /* padding: 4rem; */
+  box-shadow: 0px 100px 10000px black;
+
+  border-radius: 10px;
+}
+
+.datemenu_duration {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.119);
+
+  border-radius: 10px;
+  text-transform: capitalize;
+  height: 3rem;
+}
+.datemenu_duration_display {
+  flex: 1;
+}
+.datemenu_duration_container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.datemenu_duration button {
+  background-color: transparent;
+  border: none;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: 0.2s;
+}
+.durationcounter_button:hover {
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.214);
+}
+.durationcounter_button:disabled {
+  cursor: not-allowed;
+}
+.fa-calendar-days {
+  font-size: 2rem;
+  color: var(--colortheme);
+}

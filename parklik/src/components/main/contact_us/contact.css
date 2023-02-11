@@ -1,0 +1,100 @@
+.contactmesection {
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  color: white;
+  background-color: black;
+}
+.contact_links {
+  display: flex;
+  gap: 2rem;
+}
+/* .contact-links button {
+  width: 10rem;
+  background-color: var(--colortheme);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+  cursor: pointer;
+} */
+.contact-form {
+  margin-bottom: 2rem;
+}
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  padding: 1rem;
+  color: rgb(255, 255, 255);
+
+  border-bottom: 2px solid rgba(255, 255, 255, 0.326);
+
+  font-size: 1.1rem;
+}
+.contact-form button {
+  width: fit-content;
+  margin: 1rem 0;
+  font-size: 1.3rem;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form button:hover {
+  background-color: var(--colortheme);
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-bottom: 2px solid var(--colortheme);
+}
+
+.fa-envelope,
+.fa-phone {
+  color: var(--colortheme);
+}
+.contactmesection h2 {
+  font-size: 6rem;
+  margin-bottom: 4rem;
+  text-transform: capitalize;
+}
+.direct-links {
+  margin-bottom: 1.5rem;
+}
+.direct-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}
+.direct-links i {
+  font-size: 1.5rem;
+}
+.sociallinks-flex i {
+  color: white;
+  font-size: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 1.5rem;
+}
+.left_section {
+  flex: 1;
+  background-color: rgb(0, 0, 0);
+
+  padding: 4rem 2rem;
+}
+.right_section {
+  flex: 1.5;
+
+  position: relative;
+  background-image: url(https://img.freepik.com/free-vector/chatting-concept-illustration_114360-420.jpg?w=740&t=st=1675969027~exp=1675969627~hmac=10a6889373e8e8925b1dfc749e33a9515f7962b33c960a397171c4bf0690db51);
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

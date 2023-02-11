@@ -4,7 +4,9 @@
   box-sizing: border-box;
   font-family: "Plus Jakarta Sans", sans-serif;
 }
-
+:root {
+  --colortheme: #39a7eb;
+}
 html {
   background: linear-gradient(to right, #0162b9, #003c8b);
 }
